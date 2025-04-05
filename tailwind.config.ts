@@ -15,19 +15,21 @@ const config: Config = {
         container: '1300px',
       },
       colors: {
-        main: '#A3E636',
-        mainAccent: '#88cc19', 
+        main: '#CCE3DE',
+        mainAccent: '#A4C3B2', 
         overlay: 'rgba(0,0,0,0.8)',
         // light mode
         bg: '#E0E7F1',
         text: '#000',
         border: '#000',
-  
+        
         // dark mode
         darkBg: '#2c312b',
         darkText: '#eeefe9',
         darkBorder: '#000',
         secondaryBlack: '#212121',
+        textSecondary: '#081c15',
+        darkTextSecondary: '#cad2c5',
       },
       borderRadius: {
         base: '5px',
@@ -35,6 +37,7 @@ const config: Config = {
       boxShadow: {
         light: '4px 4px 0px 0px #000',
         dark: '4px 4px 0px 0px #000',
+        brutal: '4px 4px 0px 0px rgba(0,0,0,1)',
       },
       translate: {
         boxShadowX: '4px',
