@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 import tailwindAnimate from 'tailwindcss-animate'
+import tailwindcssMotion from "tailwindcss-motion";
 
 const config: Config = {
   content: [
@@ -15,9 +16,8 @@ const config: Config = {
       },
       colors: {
         main: '#A3E636',
-        mainAccent: '#88cc19', // not needed for shadcn components
-        overlay: 'rgba(0,0,0,0.8)', // background color overlay for alert dialogs, modals, etc.
-  
+        mainAccent: '#88cc19', 
+        overlay: 'rgba(0,0,0,0.8)',
         // light mode
         bg: '#E0E7F1',
         text: '#000',
@@ -27,7 +27,7 @@ const config: Config = {
         darkBg: '#2c312b',
         darkText: '#eeefe9',
         darkBorder: '#000',
-        secondaryBlack: '#212121', // opposite of plain white, not used pitch black because borders and box-shadows are that color 
+        secondaryBlack: '#212121',
       },
       borderRadius: {
         base: '5px',
@@ -76,7 +76,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindAnimate],
+  plugins: [tailwindAnimate, tailwindcssMotion],
   darkMode: 'class',
 }
 export default config
